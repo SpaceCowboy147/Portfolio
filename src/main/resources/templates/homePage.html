@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dylan Harper's Portfolio</title>
+    
+<style>
+body {
+        background-color:gray;
+    }
+
+
+h1{
+        text-align:center;
+        color:black;
+        font-size:250%;
+        font-family:fantasy;
+    }
+
+    /* navBar start*/
+.navBar {
+         list-style-type: none;
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+          background-color: #333;
+    }
+ 
+li {
+  float: left;
+}
+
+li a {
+        display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+    }
+
+
+li a:hover {
+  background-color: #111;
+}
+
+.contactMe {
+    background-color: black;
+}
+
+
+ .aboutMe{
+        text-align:center;
+        margin-left:15%;
+        margin-right:15%;
+    }
+    /* navBar End */
+
+
+ .skills{
+         display: inline-grid;
+         grid-template-columns: repeat(3,1fr);
+        column-gap: 100px;
+         row-gap:25px;
+        margin-left: 30%;
+        margin-right:30%;
+
+ }
+.skills li {
+       border: 3px black;
+      border-radius: 7px;
+      background-color: black;
+      padding: 1em;
+      text-align: center;
+      color: white;
+}
+    
+
+</style>
+</head>
+
+
+
+<body>
+ <h1>Dylan Harper's Portfolio</h1>
+  
+    <ul class = "navBar">
+     <li><a href = "homePage">Home</a></li>
+    <li><a href = "webApps">Web Applications</a></li>
+    <li><a href = "gameApps">Game Applications</a></li>
+    <li style="float:right"><a class="contactMe" href="contact">Contact</a></li>
+    <li style="float:right"><a href = "aboutMe">More About Me</a></li>
+    <li style="float:right"><a href = "DylanHarper_resume.pdf" download="DylanHarper_resume">Download Resume</a></li>
+    </ul>
+    
+
+
+<div class ="aboutMe">
+    <h2>About me</h2>
+    <p>Enthusiastic backend developer primarily focused on Java. Skilled at making applications secured with Spring Security,
+        fixing bugs, and finding solutions to problems. Excellent team-player and communicator that loves to lead the way and
+        learn new skills.
+    </p>
+</div>
+
+
+ <h2 style="text-align:center">Skills</h2>
+ <ul class = "skills">
+    <li>Java</li>
+    <li>Git</li>
+    <li>Spring boot</li>
+    <li>MySQL</li>
+    <li>Spring Security</li>
+    <li>JDBC</li>
+    <li>REST</li>
+    <li>APIs</li>
+    <li>OOP</li>
+    <li>JUnit</li>
+    <li>Team player</li>
+    <li>Adaptable </li>
+    <li>Problem-Solving</li>
+    <li>Communication</li> 
+    <li>Quality control
+</li>
+</ul>
+
+</body>
+</html>
