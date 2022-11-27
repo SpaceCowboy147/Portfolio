@@ -3,6 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <title>Game Projects</title>
+
+    <style>
+
+       body{
+        background: linear-gradient(270deg, gray, #333);
+}
+
+
+
+.navBar {
+         list-style-type: none;
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+          background-color: #333;
+          border: 2px solid black;
+    }
+
+li {
+  float: left;
+}
+
+li a {
+        display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+    }
+
+li a:hover {
+  background-color: #111;
+}
+.contactMe {
+    background-color: black;
+}
+ /* navBar End */
+
+    </style>
 </head>
 <body>
 
@@ -10,20 +49,23 @@
   <div class = "gameApps">
     <h2>Games</h2>
     <p>Game projects made using the Unreal Engine API and C++</p>
-    <a href="gameApps">continue to game projects</a>
+    <a href="gameApps"></a>
     </div>
+  <ul class = "navBar">
+      <li><a href = "homePage">Home</a></li>
+      <li><a href = "webApps">Web Applications</a></li>
+      <li><a href = "gameApps">Game Applications</a></li>
+      <li style="float:right"><a class="contactMe" href="contact">Contact</a></li>
+      <li style="float:right"><a href = "aboutMe">More About Me</a></li>
+      <li style="float:right"><a href = "/templates/DylanHarper_resume.pdf" download="DylanHarper_resume">Download Resume</a></li>
+  </ul>
 
 
-<h2>Knights of The Underworld</h2>
+  <h2>Knights of The Underworld</h2>
 <p>3D game made using c++ and Unreal Engine.</p>
 
 <h2>Brick Breaker</h2>
 <p>Classic retro game</p>
-
-<h2>Card Game</h2>
-<p>Multiple card games. Made with Java</p>
-
-<h2>Tic Tac Toe</h2>
 
 </body>
 </html>

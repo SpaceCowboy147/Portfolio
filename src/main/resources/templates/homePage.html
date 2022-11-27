@@ -6,7 +6,7 @@
     
 <style>
 body {
-        background-color:gray;
+       background: linear-gradient( gray, #333)
     }
 
 
@@ -24,6 +24,7 @@ h1{
           padding: 0;
           overflow: hidden;
           background-color: #333;
+          border: 2px solid black;
     }
  
 li {
@@ -46,16 +47,21 @@ li a:hover {
 .contactMe {
     background-color: black;
 }
-
+ /* navBar End */
 
  .aboutMe{
         text-align:center;
         margin-left:15%;
         margin-right:15%;
-    }
-    /* navBar End */
+         border: 3px black;
+  margin:0;padding:0;
+      border-radius: 7px;
+      background-color:#A9a9a9;
+      padding: 1em;
+      text-align: center;
+      color: black;
 
-
+}
  .skills{
          display: inline-grid;
          grid-template-columns: repeat(3,1fr);
@@ -89,7 +95,7 @@ li a:hover {
     <li><a href = "gameApps">Game Applications</a></li>
     <li style="float:right"><a class="contactMe" href="contact">Contact</a></li>
     <li style="float:right"><a href = "aboutMe">More About Me</a></li>
-    <li style="float:right"><a href = "DylanHarper_resume.pdf" download="DylanHarper_resume">Download Resume</a></li>
+    <li style="float:right"><a href = "/templates/DylanHarper_resume.pdf" download="DylanHarper_resume">Download Resume</a></li>
     </ul>
     
 

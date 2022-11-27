@@ -1,26 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+
     <title>Web Applications</title>
 </head>
+<applet code=Calculator.class
+        archive="/resources/Calculator.jar"
+        width="120" height="120">
+</applet>
+<style>
+
+body{
+background: linear-gradient(270deg, gray, #333);
+}
+    .webApps{
+    text-align:center;
+    border: 8px black;
+    border-style: 75px, 200px;
+      border-radius: 7px;
+      background-color: gray;
+      padding: 1em;
+      text-align: center;
+      color: black;
+    }
+    .navBar {
+         list-style-type: none;
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+          background-color: #333;
+    }
+
+li {
+  float: left;
+}
+
+li a {
+        display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+    }
+
+
+li a:hover {
+  background-color: #111;
+}
+
+.contactMe {
+    background-color: black;
+}
+
+
+</style>
 
 <body>
 
     <div class = "webApps">
     <h2>Web apps</h2>
     <p>Applications made from Java, Springboot, and mySQL</p>
-    <a href="webApps">continue to web applications</a>
+    <a href="webApps"></a>
     </div>
 
-<h2>Musicians Paradise</h2>
+    <ul class = "navBar">
+        <li><a href = "homePage">Home</a></li>
+        <li><a href = "webApps">Web Applications</a></li>
+        <li><a href = "gameApps">Game Applications</a></li>
+        <li style="float:right"><a class="contactMe" href="contact">Contact</a></li>
+        <li style="float:right"><a href = "aboutMe">More About Me</a></li>
+        <li style="float:right"><a href = "/templates/DylanHarper_resume.pdf" download="DylanHarper_resume">Download Resume</a></li>
+    </ul>
+
+
+    <h2>Musicians Paradise</h2>
 <p>Online music store that includes Spring Security.</p>
 <a href="musiciansparadise">shop</a>
 
 <h2>Calculator</h2>
-<p>Calculator GUI made using Java</p>
-<a href="calculator">demo</a>
+<p>Calculator GUI made with Java</p>
+<a href="/resources/Calculator.jar">demo</a>
 <h2></h2>
-
+    <h2>Card Game</h2>
+    <p>Multiple card games.</p>
+    <a href="">demo</a>
+    <h2>Tic Tac Toe</h2>
+    <a href="">demo</a>
 </body>
 </html>
