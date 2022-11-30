@@ -6,8 +6,8 @@ import org.springframework.boot.web.servlet.ServletComponentScan;
 import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
-@ComponentScan("com.dylanharper.navigationBar")
-@ServletComponentScan("com.dylanharper.navigationBar")
+@ComponentScan(basePackages = {"com.dylanharper.navigationBar", "com.dylanharper.webApps", "com.dylanharper.resume"})
+@ServletComponentScan(basePackages ={"com.dylanharper.navigationBar", "com.dylanharper.webApps",  "com.dylanharper.resume"})
 public class MainApplication {
 
 	public static void main(String[] args) {

@@ -12,8 +12,8 @@ public class webAppServlets extends HttpServlet {
 
 
     public void doGet(HttpServletRequest request, HttpServletResponse response){
-        String jarPath = getServletContext().getRealPath("/resources/Calculator.jar");
-
+        String jarPath = "/resources/Calculator.jar";
+        response.setContentType("application/pdf");
 
 
     }
