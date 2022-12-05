@@ -50,7 +50,7 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 				<configuration>
-					<mainClass>com.lapots.breed.hero.journey.web.HeroJourneyWebApplication</mainClass>
+					<mainClass>com.dylanharper.main.MainApplication</mainClass>
 					<excludes>
 						<exclude>
 							<groupId>org.projectlombok</groupId>
