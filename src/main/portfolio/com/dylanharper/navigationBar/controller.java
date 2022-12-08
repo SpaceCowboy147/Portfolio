@@ -19,7 +19,7 @@ import java.nio.file.Paths;
 @Controller
 public class controller {
 
-    @GetMapping("/homePage")
+    @GetMapping("/")
     public String homePage() {
 
         return "homePage";
