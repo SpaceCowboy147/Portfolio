@@ -53,7 +53,7 @@
 				<configuration>
 					<jdkVersion>17</jdkVersion>
 					<processTypes>
-						<web>java -jar target/shop-0.0.1-SNAPSHOT.jar</web>
+						<web>java -jar target/portfolio.jar</web>
 					</processTypes>
 				</configuration>
 			</plugin>
