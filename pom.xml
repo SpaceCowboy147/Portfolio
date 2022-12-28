@@ -62,7 +62,7 @@
 				<configuration>
 
 
-					<mainClass>com.dylanharper.main.MainApplication</mainClass>
+					<mainClass>main.com.dylanharper.main.MainApplication</mainClass>
 
 					<excludes>
 						<exclude>
