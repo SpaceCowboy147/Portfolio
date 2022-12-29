@@ -1,1 +1,0 @@
-web: java -jar out/artifacts/portfolio_jar/portfolio.jar
