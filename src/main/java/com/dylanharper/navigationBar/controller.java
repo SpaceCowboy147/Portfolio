@@ -42,7 +42,7 @@ public class controller {
     @GetMapping("/DylanHarper_resume.pdf")
     public void downloadResume(HttpServletRequest request, HttpServletResponse response) throws IOException {
         try {
-            File resumePDF = new File("C:\\Users\\dylan\\Documents\\GitHub\\portfolio\\src\\main\\resources\\templates\\DylanHarper_resume.pdf");
+            File resumePDF = new File("\\DylanHarper_resume.pdf");
             if (resumePDF.exists()) {
                 Files.copy(resumePDF.toPath(), response.getOutputStream());
 
