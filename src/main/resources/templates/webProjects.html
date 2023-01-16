@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Applications</title>
+
 </head>
-<applet code=Calculator.class
-        archive="/resources/Calculator.jar"
-        width="120" height="120">
-</applet>
+
 <style>
 
 body{
@@ -61,6 +59,30 @@ h2 p{
       text-align: left;
       color: white;
 }
+
+h2 {
+        display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+    }
+      .webAppNames {
+          display: grid;
+         grid-template-columns: repeat(2,1fr);
+        column-gap: 100px;
+        row-gap:100px;
+        margin-left: 15%;
+        margin-right:15%;
+    }
+     .webAppNames li{
+          border: 2px white;
+          border-style: inset;
+      border-radius: 7px;
+      background-color: black;
+      padding: 1em;
+      text-align: center;
+      color: white;
 </style>
 
 <body>
@@ -72,34 +94,37 @@ h2 p{
     </div>
 
     <ul class = "navBar">
-        <li><a href = "">Home</a></li>
+        <li><a href = "/">Home</a></li>
         <li><a href = "webApps">Web Applications</a></li>
         <li><a href = "gameApps">Game Applications</a></li>
         <li style="float:right"><a class="contactMe" href="contact">Contact</a></li>
         <li style="float:right"><a href = "aboutMe">More About Me</a></li>
-        <li style="float:right"><a href = "DylanHarper_resume.pdf" download="DylanHarper_resume">Download Resume</a></li>
+        <li style="float:right"><a href = "DylanHarper_resume.pdf" download="/DylanHarper_resume">Download Resume</a></li>
     </ul>
 
+    <ul class = webAppNames>
 
-    <h2>Musicians Paradise</h2>
+    <li>Musicians Paradise
 <p>Online music store that includes Spring Security. Database is not working on heroku right now
-so it's stuck on the login screen for now. Runnable on local machine.</p>
+so, it's stuck on the login screen for now. Runnable on local machine.</p>
 
 <p>Deployed App<a href="https://musicians-paradise.herokuapp.com/login">  here</a></p>
 
     <p>Source code<a href="https://github.com/SpaceCowboy147/Musicians-Paradise">  here</a>
+    </li>
 
-    <h2>Card Game</h2>
+    <li>Card Game
     <p>Multiple card games. Currently only has war. Will be working on poker soon.</p>
-    <a href="https://github.com/SpaceCowboy147/Cards">Source Code</a>
-    <h2>Tic Tac Toe</h2>
+   <p> <a href = "https://github.com/SpaceCowboy147/Cards">Source Code</a></p>
+    </li>
+    <li>Tic Tac Toe
     <p>If you know, you know</p>
-    <a href="https://github.com/SpaceCowboy147/Tic-Tac-Toe">code</a>
+   <p> <a href = "https://github.com/SpaceCowboy147/Tic-Tac-Toe">code</a></p></li>
 
-<h2>Calculator</h2>
+<li>Calculator
 <p>Calculator GUI made with Java</p>
-<a href="https://github.com/SpaceCowboy147/Calculator">Source Code</a>
-<h2></h2>
+<a href="https://github.com/SpaceCowboy147/Calculator">Source Code</a></li>
 
+    </ul>
 </body>
 </html>
