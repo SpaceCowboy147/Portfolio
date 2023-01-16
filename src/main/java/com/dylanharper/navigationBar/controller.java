@@ -6,9 +6,7 @@ import jakarta.servlet.http.HttpServletResponse;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 
-import java.io.File;
-import java.io.IOException;
-import java.nio.file.Files;
+import java.io.*;
 
 @Controller
 public class controller {
@@ -42,19 +40,26 @@ public class controller {
     @GetMapping("/DylanHarper_resume.pdf")
     public void downloadResume(HttpServletRequest request, HttpServletResponse response) throws IOException {
         try {
-            File resumePDF = new File("\\DylanHarper_resume.pdf");
-            if (resumePDF.exists()) {
-                Files.copy(resumePDF.toPath(), response.getOutputStream());
 
+         InputStream inputStream = this.getClass().getClassLoader().getResourceAsStream("/DylanHarper_resume.pdf");
+            byte[] buffer = new byte[inputStream.available()];
+            inputStream.read(buffer);
+
+            File targetFile = new File("/DylanHarper_resume.pdf");
+            OutputStream outStream = new FileOutputStream(targetFile);
+            outStream.write(buffer);
+
+            System.out.println("orange");
+        } catch (Exception ex) {
+
+            ex.printStackTrace();
+        }
+
+            }
             }
 
 
-        } catch (IOException e) {
-            e.printStackTrace();
-    }
 
-}
-}
 
 
 
