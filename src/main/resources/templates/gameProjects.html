@@ -42,6 +42,24 @@ li a:hover {
 }
  /* navBar End */
 
+
+
+      .gameApps {
+          display: grid;
+         grid-template-columns: repeat(2,1fr);
+        column-gap: 100px;
+        row-gap:100px;
+        margin-left: 15%;
+        margin-right:15%;
+    }
+     .gameApps li{
+          border: 2px white;
+          border-style: inset;
+      border-radius: 7px;
+      background-color: black;
+      padding: 1em;
+      text-align: center;
+      color: white;
     </style>
 </head>
 <body>
@@ -61,12 +79,28 @@ li a:hover {
       <li style="float:right"><a href = "/templates/DylanHarper_resume.pdf" download="DylanHarper_resume">Download Resume</a></li>
   </ul>
 
+  <ul class = "gameApps">
 
-  <h2>Knights of The Underworld</h2>
-<p>3D game made using c++ and Unreal Engine.</p>
+      <li>Card Game
+          <p>Multiple card games. Currently only has war. Will be working on poker soon.</p>
+          <p> <a href = "https://github.com/SpaceCowboy147/Cards">Source Code</a></p>
+      </li>
 
-<h2>Brick Breaker</h2>
-<p>Classic retro game</p>
+  <li>Tic Tac Toe
+      <p>If you know, you know</p>
+      <p> <a href = "https://github.com/SpaceCowboy147/Tic-Tac-Toe">code</a></p></li>
 
+      </li>
+
+      <li>Knights of The Underworld
+      <p>3D game made using C++ and Unreal Engine. This project was to learn C++ and the Unreal Engine APIs further.
+    I used the outdated Unreal Engine 4 docs because that's what worked at the time.</p>
+          <p>GitHub<a href = "https://github.com/SpaceCowboy147/Tic-Tac-Toe">code</a></p></li>
+</li>
+
+      <li>Brick Breaker
+<p>Classic retro game with c++</p>
+      </li>
+  </ul>
 </body>
 </html>
