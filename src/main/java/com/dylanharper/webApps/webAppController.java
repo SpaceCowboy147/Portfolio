@@ -19,14 +19,14 @@ import java.nio.file.Files;
 public class webAppController {
 
 
-        @GetMapping("/templates/Calculator.jar")
+        @GetMapping("/Calculator.jar")
         public ResponseEntity<InputStreamResource> downloadJar() {
             try {
                 ClassPathResource jarFile = new ClassPathResource("jars/sample.jar");
 
                 HttpHeaders headers = new HttpHeaders();
                 headers.setContentType(MediaType.APPLICATION_OCTET_STREAM);
-                headers.add("Content-Disposition", "attachment; filename=sample.jar");
+                headers.add("Content-Disposition", "attachment; filename=calculator.jar");
                 headers.add("Cache-Control", "no-cache, no-store, must-revalidate");
                 headers.add("Pragma", "no-cache");
                 headers.add("Expires", "0");
