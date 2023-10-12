@@ -2,13 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=0.5, shrink-to-fit=no">
     <title>Game Projects</title>
 
     <style>
 
        body{
-        background: linear-gradient(270deg, gray, #333);
+        background: linear-gradient(270deg, #404040, #333);
 }
 
 
@@ -42,13 +42,26 @@ li a:hover {
 }
  /* navBar End */
 
+ .title{
+        text-align:center;
+        margin-left:15%;
+        margin-right:15%;
+         border: 3px black;
+        margin:0;padding:0;
+      border-radius: 7px;
+      background-color:#595959;
+      padding: 1em;
+      text-align: center;
+      color: black;
+
+}
+
       .gameApps {
           display: grid;
-         grid-template-columns: repeat(2,1fr);
+         grid-template-columns: repeat(2,20fr);
         column-gap: 100px;
         row-gap:100px;
-        margin-left: 15%;
-        margin-right:15%;
+
     }
      .gameApps li{
           border: 2px white;
@@ -58,6 +71,13 @@ li a:hover {
       padding: 1em;
       text-align: center;
       color: white;
+
+     }
+
+     .gameApps a{
+    color: #b3b3b3;
+    text-decoration: underline;
+}
     </style>
 </head>
 <body>
@@ -65,6 +85,7 @@ li a:hover {
 
   <div class = "title">
     <h1>Games</h1>
+
     <p>Game projects made using modern technologies. Mostly basic Java games but I do have a few
     projects using C++ and the Unreal Engine APIs.</p>
     <a href="gameApps"></a>
@@ -75,26 +96,26 @@ li a:hover {
       <li><a href = "gameApps">Game Applications</a></li>
       <li style="float:right"><a class="contactMe" href="contact">Contact</a></li>
       <li style="float:right"><a href = "aboutMe">More About Me</a></li>
-      <li style="float:right"><a href = "/templates/DylanHarper_resume.pdf" download="DylanHarper_resume">Download Resume</a></li>
+      <li style="float:right"><a href = "DylanHarper_resume.pdf" download="/DylanHarper_resume.pdf">Download Resume</a></li>
   </ul>
 
   <ul class = "gameApps">
 
       <li>Card Game
-          <p>Multiple card games. Currently only has war. Will be working on poker soon.</p>
-          <p> <a href = "https://github.com/SpaceCowboy147/Cards">Source Code</a></p>
+          <p>Multiple card games made using Java.</p>
+          <p><a href = "https://github.com/SpaceCowboy147/Cards/tree/main/src">GitHub: Source Code</a></p>
       </li>
 
   <li>Tic Tac Toe
-      <p>If you know, you know</p>
-      <p> <a href = "https://github.com/SpaceCowboy147/Tic-Tac-Toe">code</a></p></li>
+      <p>Tic tac toe using Java GUIs and swing</p>
+      <p><a href = "https://github.com/SpaceCowboy147/Tic-Tac-Toe/blob/main/TicTacToe/Game.java">GitHub: Source Code</a></p></li>
 
       </li>
 
       <li>Knights of The Underworld
       <p>3D game made using C++ and Unreal Engine. This project was to learn C++ and the Unreal Engine APIs further.
     I used the outdated Unreal Engine 4 docs because that's what worked at the time.</p>
-          <p>GitHub<a href = "https://github.com/SpaceCowboy147/Tic-Tac-Toe">code</a></p></li>
+          <p><a href = "https://github.com/SpaceCowboy147/KnightsOfTheUnderWorld/tree/main/KOTU">GitHub: Source code</a></p></li>
 </li>
 
 
