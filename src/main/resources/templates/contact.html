@@ -9,13 +9,56 @@
 
     <style>
     body{
-            background-color:gray;
+            background:linear-gradient(270deg,#404040, #333);
     }
+    h1{
+        text-align:center;
+        color:black;
+        font-size:250%;
+        font-family:Arial;
+    }
+        .navBar {
+         list-style-type: none;
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+          background-color: #0d0d0d;
+          border: 2px solid black;
+    }
+
+li {
+  float: left;
+}
+
+li a {
+        display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+    }
+li a:hover {
+  background-color: #111;
+}
+.contactMe {
+    background-color: #e6e6e6;
+     color : black;
+}
+ /* navBar End */
+
     </style>
 </head>
 <body>
 
 <h1>Contact Me</h1>
+<ul class = "navBar">
+    <li><a href = "/">Home</a></li>
+    <li><a href = "webApps">Web Applications</a></li>
+    <li><a href = "gameApps">Game Applications</a></li>
+    <li style="float:right"><a class="contactMe" href="contact">Contact</a></li>
+    <li style="float:right"><a href = "aboutMe">More About Me</a></li>
+    <li style="float:right"><a href = "DylanHarper_resume.pdf" download="/DylanHarper_resume">Download Resume</a></li>
+</ul>
 <h2>Email</h2>
 <p>dylankharper147@gmail.com</p>
 

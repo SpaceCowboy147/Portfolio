@@ -8,17 +8,36 @@
     <style>
 
        body{
-        background: linear-gradient(270deg, #404040, #333);
+        background: linear-gradient(270deg,#404040, #333);
 }
 
+h1{
+        text-align:center;
+        color:black;
+        font-size:250%;
+        font-family:Arial;
+    }
 
+ .gamePageDescription{
+        text-align:center;
+        margin-left:15%;
+        margin-right:15%;
+         border: 3px black;
+        margin:0;padding:0;
+      border-radius: 7px;
+      background-color:#595959;
+      padding: 1em;
+      text-align: center;
+      color: black;
+
+}
 
 .navBar {
          list-style-type: none;
           margin: 0;
           padding: 0;
           overflow: hidden;
-          background-color: #333;
+          background-color:  #0d0d0d;
           border: 2px solid black;
     }
 
@@ -38,36 +57,24 @@ li a:hover {
   background-color: #111;
 }
 .contactMe {
-    background-color: black;
+    background-color: #e6e6e6;
+     color : black;
 }
  /* navBar End */
 
- .title{
-        text-align:center;
-        margin-left:15%;
-        margin-right:15%;
-         border: 3px black;
-        margin:0;padding:0;
-      border-radius: 7px;
-      background-color:#595959;
-      padding: 1em;
-      text-align: center;
-      color: black;
-
-}
 
       .gameApps {
           display: grid;
-         grid-template-columns: repeat(2,20fr);
+         grid-template-columns: repeat(2,1fr);
         column-gap: 100px;
         row-gap:100px;
 
     }
      .gameApps li{
-          border: 2px white;
-          border-style: inset;
+            border: 3px solid black;
+      border-style: inset;
       border-radius: 7px;
-      background-color: black;
+      background-color: #1a1a1a;
       padding: 1em;
       text-align: center;
       color: white;
@@ -83,13 +90,10 @@ li a:hover {
 <body>
 
 
-  <div class = "title">
-    <h1>Games</h1>
 
-    <p>Game projects made using modern technologies. Mostly basic Java games but I do have a few
-    projects using C++ and the Unreal Engine APIs.</p>
-    <a href="gameApps"></a>
-    </div>
+    <h1>Game Applications</h1>
+
+
   <ul class = "navBar">
       <li><a href = "/">Home</a></li>
       <li><a href = "webApps">Web Applications</a></li>
@@ -99,24 +103,28 @@ li a:hover {
       <li style="float:right"><a href = "DylanHarper_resume.pdf" download="/DylanHarper_resume.pdf">Download Resume</a></li>
   </ul>
 
-  <ul class = "gameApps">
+  <div class ="gamePageDescription">
+    <p>Game projects made using modern technologies. Mostly basic Java games but I do have a few
+    projects using C++ and the Unreal Engine APIs.</p>
+    </div>
 
+
+  <ul class = "gameApps">
       <li>Card Game
           <p>Multiple card games made using Java.</p>
-          <p><a href = "https://github.com/SpaceCowboy147/Cards/tree/main/src">GitHub: Source Code</a></p>
+         <p> <a href = "https://github.com/SpaceCowboy147/Cards/tree/main/src">GitHub: Source Code</a></p>
       </li>
 
   <li>Tic Tac Toe
       <p>Tic tac toe using Java GUIs and swing</p>
       <p><a href = "https://github.com/SpaceCowboy147/Tic-Tac-Toe/blob/main/TicTacToe/Game.java">GitHub: Source Code</a></p></li>
 
-      </li>
 
       <li>Knights of The Underworld
       <p>3D game made using C++ and Unreal Engine. This project was to learn C++ and the Unreal Engine APIs further.
     I used the outdated Unreal Engine 4 docs because that's what worked at the time.</p>
           <p><a href = "https://github.com/SpaceCowboy147/KnightsOfTheUnderWorld/tree/main/KOTU">GitHub: Source code</a></p></li>
-</li>
+
 
 
   </ul>

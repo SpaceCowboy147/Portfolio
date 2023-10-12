@@ -12,7 +12,15 @@
 body{
 background: linear-gradient(270deg,#404040, #333);
 }
-    .webApps{
+
+
+h1{
+        text-align:center;
+        color:black;
+        font-size:250%;
+        font-family:Arial;
+    }
+    .webAppsPageDescription{
         text-align:center;
         margin-left:15%;
         margin-right:15%;
@@ -30,7 +38,7 @@ background: linear-gradient(270deg,#404040, #333);
           margin: 0;
           padding: 0;
           overflow: hidden;
-          background-color: #333;
+          background-color: #0d0d0d;
           border: 2px solid black;
     }
 
@@ -50,26 +58,12 @@ li a:hover {
   background-color: #111;
 }
 .contactMe {
-    background-color: black;
+    background-color: #e6e6e6;
+     color : black;
 }
  /* navBar End */
 
-h2 p{
-  border: 3px black;
-      border-radius: 7px;
-      background-color: black;
-      padding: 1em;
-      text-align: left;
-      color: white;
-}
 
-h2 {
-        display: block;
-  color: black;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-    }
       .webAppNames {
           display: grid;
          grid-template-columns: repeat(2,1fr);
@@ -78,22 +72,25 @@ h2 {
 
     }
      .webAppNames li{
-          border: 2px white;
+          border: 3px solid black;
           border-style: inset;
       border-radius: 7px;
-      background-color: black;
+      background-color:#1a1a1a;
       padding: 1em;
       text-align: center;
       color: white;
+      }
+
+      .webAppNames a {
+    color: #b3b3b3;
+    text-decoration: underline;
+}
 </style>
 
 <body>
 
-    <div class = "webApps">
-    <h1>Web apps</h1>
-    <p>Applications made from Java, Springboot, and mySQL</p>
-    <a href="webApps"></a>
-    </div>
+
+    <h1>Web Applications</h1>
 
     <ul class = "navBar">
         <li><a href = "/">Home</a></li>
@@ -101,24 +98,28 @@ h2 {
         <li><a href = "gameApps">Game Applications</a></li>
         <li style="float:right"><a class="contactMe" href="contact">Contact</a></li>
         <li style="float:right"><a href = "aboutMe">More About Me</a></li>
-        <li style="float:right"><a href = "DylanHarper_resume.pdf" download="/DylanHarper_resume">Download Resume</a></li>
+        <li style="float:right"><a href = "DylanHarper_resume.pdf" download="/DylanHarper_resume.pdf">Download Resume</a></li>
     </ul>
 
-    <ul class = webAppNames>
+    <div class ="webAppsPageDescription">
+    <p>Applications made from Java, Springboot, and mySQL</p>
+    </div>
 
+
+    <ul class = webAppNames>
     <li>Musicians Paradise
 <p>Online music store that includes Spring Security. Using mySQL as a database. Still needs
 work on the HTML for the main shop</p>
 
 <p><a href="https://musicians-paradise.herokuapp.com/login">Deployed App</a></p>
 
-    <p><a href="https://github.com/SpaceCowboy147/Musicians-Paradise">GitHub: Source Code</a>
+    <p><a href="https://github.com/SpaceCowboy147/Musicians-Paradise/tree/main/src/main/java/com/dylansmusicshop">GitHub: Source Code</a>
     </li>
 
 
     <li>Encrypted Messaging
     <p>Messaging app that uses keys to unlock encrypted messages.</p>
-   <p> <a href = "https://github.com/SpaceCowboy147/Encrypted-Messaging">GitHub:  Source code</a></p>
+   <p> <a href = "https://github.com/SpaceCowboy147/Encrypted-Messaging/tree/main/src/main">GitHub:  Source code</a></p>
     </li>
 
 <li>Calculator
@@ -126,7 +127,7 @@ work on the HTML for the main shop</p>
 
     <p><a href = "Calculator.jar" download="/Calculator.jar">Download jar</a></p>
 
-<a href="https://github.com/SpaceCowboy147/Calculator">GitHub</a></li>
+<a href="https://github.com/SpaceCowboy147/Calculator/tree/main/src/CalculatorApp">GitHub</a></li>
 
     </ul>
 </body>

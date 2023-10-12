@@ -43,7 +43,7 @@ public class controller {
     @GetMapping("/DylanHarper_resume.pdf")
         public ResponseEntity<InputStreamResource> downloadPDF() {
             try {
-                ClassPathResource pdfFile = new ClassPathResource("//templates/DylanHarper_resume.pdf");
+                ClassPathResource pdfFile = new ClassPathResource("/templates/DylanHarper_resume.pdf");
 
                 HttpHeaders headers = new HttpHeaders();
                 headers.setContentType(MediaType.APPLICATION_PDF);
