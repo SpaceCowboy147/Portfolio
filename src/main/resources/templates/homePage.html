@@ -12,6 +12,7 @@
 
 body {
        background: linear-gradient( #404040, #333)
+
     }
 
 
@@ -75,6 +76,7 @@ li a:hover {
         column-gap: 100px;
          row-gap:25px;
 
+
  }
 .skills li {
        border: 3px solid black;
@@ -90,7 +92,21 @@ li a:hover {
  a {
         color: black;
       }
+@media screen and (max-width: 600px) {
+    .navBar {
+        text-align: center;
+    }
 
+    .skills li {
+        float: none;
+        display: inline-block;
+    }
+
+    .skills {
+        grid-template-columns: 1fr;
+
+    }
+}
 
 
 </style>
@@ -129,11 +145,10 @@ li a:hover {
 
 <div class ="aboutMe">
     <h2>About me</h2>
-    <p>Enthusiastic backend developer with a strong focus on Java programming and a passion for creating
-        secure and efficient applications using Spring Security. Skilled at resolving complex bugs and challenges,
-        while ensuring optimal performance. A collaborative team player with excellent communication within
-        teams. Eager for new challenges and staying up to date on security to deliver high quality secure
-        applications
+    <p>Results-oriented backend developer with a strong focus on Java programming and dedication for creating
+        secure and efficient applications through expertise in Spring Security. Proficient at resolving complex bugs and
+        challenges, while ensuring optimal performance. A collaborative team player with excellent communication
+        within teams. Ready to embrace new challenges and contribute to cutting-edge projects.
     </p>
 </div>
 
@@ -149,7 +164,7 @@ li a:hover {
     <li>REST</li>
     <li>APIs</li>
     <li>OOP</li>
-    <li>JUnit</li>
+    <li>HTML</li>
     <li>Team player</li>
     <li>Adaptable </li>
     <li>Problem-Solving</li>

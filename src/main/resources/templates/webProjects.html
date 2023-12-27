@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=0.5, shrink-to-fit=no">
@@ -85,6 +85,17 @@ li a:hover {
     color: #b3b3b3;
     text-decoration: underline;
 }
+@media screen and (max-width: 600px) {
+    .navBar {
+        text-align: center;
+    }
+
+    li {
+        float: none;
+        display: inline-block;
+    }
+
+}
 </style>
 
 <body>
@@ -108,8 +119,11 @@ li a:hover {
 
     <ul class = webAppNames>
     <li>Musicians Paradise
-<p>Online music store that includes Spring Security. Using mySQL as a database. Still needs
-work on the HTML for the main shop</p>
+<p>•Full stack Spring boot web application implementing Spring Security for secured logins, authorization
+    and authentication.</p>
+   <p> •Stores created users with encrypted passwords in an online MySQL database using JDBC.</p>
+        <p>  •Thyme leaf is also used to display models from the database to html pages.</p>
+        <p>  •You can create an account or continue as a guest. Works on desktop and mobile devices.</p>
 
 <p><a href="https://musicians-paradise.herokuapp.com/login">Deployed App</a></p>
 
@@ -118,7 +132,10 @@ work on the HTML for the main shop</p>
 
 
     <li>Encrypted Messaging
-    <p>Messaging app that uses keys to unlock encrypted messages.</p>
+    <p>•Full stack Spring boot application using web sockets and implements AES encryption to send encrypted
+        messages to users.</p>
+        <p>•Users can decrypt messages using another user’s key.</p>
+        <p>•Utilizes Thyme Leaf, HTML, and CSS for creating visually appealing and functional web pages.</p>
    <p> <a href = "https://github.com/SpaceCowboy147/Encrypted-Messaging/tree/main/src/main">GitHub:  Source code</a></p>
     </li>
 
